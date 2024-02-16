@@ -4,6 +4,8 @@ invalid_numbers =  ["5541801923795240", "4024007106512380", "6011797668868728"]
 
 # Your Luhn Algorithm Here
 
+require 'pry'
+
 def valid_card(string)
   split = string.split('')
   numbers = split.map do |letter|
@@ -33,6 +35,9 @@ def valid_card(string)
 end 
 
 # valid_card(card_number)
+
+binding.pry
+
 
 # Output
 ## If it is valid, print "The number [card number] is valid!"
